@@ -2,12 +2,21 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
+    public Transform Target_Player;
+
     public float Boss_Hp = 1f;
     [SerializeField] private float Boss_Spd = 1f;
 
     [SerializeField] private float Boss_FireRate = 1f;
-    public int Boss_BulletType = 0;
+    //public int Boss_BulletType = 0;
     public int Boss_Pattern = Random.Range(1, 6);               // 공격 패턴, 총 5개
+
+
+    void Awake()
+    {
+
+    }
+
 
     void Start()
     {
