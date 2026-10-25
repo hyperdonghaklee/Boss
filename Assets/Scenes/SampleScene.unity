@@ -570,6 +570,7 @@ GameObject:
   - component: {fileID: 1886052280}
   - component: {fileID: 1886052279}
   - component: {fileID: 1886052283}
+  - component: {fileID: 1886052284}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -746,6 +747,45 @@ MonoBehaviour:
   enemyKnockbackDuration: 0.2
   invincibleTime: 1.5
   blinkInterval: 0.1
+--- !u!114 &1886052284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886052277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3fd1fa70f8a1449bcbc48e040a6d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwTag: Throw
+  enemyTag: Enemy
+  bossTag: Boss
+  wingSlot_1: 0
+  wingSlot_2: 0
+  bodySlot_1: 0
+  bodySlot_2: 0
+  engineSlot: 0
+  forceGuideKey: 49
+  timeStopKey: 50
+  reflectKey: 51
+  blackHoleKey: 52
+  slowFieldKey: 53
+  skillCooldown: 2
+  reverseHitDamage: 1
+  reverseDefaultSpeed: 8
+  reverseLifetime: 10
+  timeFreezeDuration: 3
+  reflectRadius: 1.5
+  blackHolePrefab: {fileID: 4293747669116311269, guid: 12326a641c16a4e48a95e48f19048a2f, type: 3}
+  blackHoleDuration: 3
+  blackHolePullRadius: 5
+  blackHolePullSpeed: 8
+  blackHoleAbsorbDistance: 0.3
+  slowFieldRadius: 4
+  slowFieldDuration: 4
+  slowSpeedAmount: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
