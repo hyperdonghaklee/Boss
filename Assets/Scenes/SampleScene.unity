@@ -548,12 +548,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Boss_Hp: 1
-  Boss_Spd: 1
   Boss_FireRate: 1
+  Boss_Spd: 1
   Boss_Pattern: 0
   Missile: {fileID: 6227302431042342699, guid: 1e45e2f6bb3552a4bb7dfaf6e650d3bd, type: 3}
   Bullet: {fileID: 2423231597737948154, guid: 97ffbbb08fd4830449541eddaece4393, type: 3}
   bulletSpeed: 8
+  BarrierTime: 3
+  dashDistance: 5
+  dashSpeed: 20
 --- !u!1 &1886052277
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +569,7 @@ GameObject:
   - component: {fileID: 1886052281}
   - component: {fileID: 1886052280}
   - component: {fileID: 1886052279}
-  - component: {fileID: 1886052278}
+  - component: {fileID: 1886052283}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -574,32 +577,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1886052278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886052277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 537d1ad5150d24f4584b6eae028b6694, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 6
-  slowSpeed: 2.5
-  rotateSpeed: 180
-  slowRotateSpeed: 90
-  minBounds: {x: -8, y: -4.5}
-  maxBounds: {x: 8, y: 4.5}
-  enemyTag: Enemy
-  enemyBulletTag: EnemyBullet
-  maxHp: 5
-  damagePerHit: 1
-  enemyKnockbackDistance: 2
-  enemyKnockbackDuration: 0.2
-  invincibleTime: 1.5
-  blinkInterval: 0.1
 --- !u!50 &1886052279
 Rigidbody2D:
   serializedVersion: 5
@@ -743,6 +720,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1886052283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886052277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537d1ad5150d24f4584b6eae028b6694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 6
+  slowSpeed: 2.5
+  rotateSpeed: 180
+  slowRotateSpeed: 90
+  minBounds: {x: -8, y: -4.5}
+  maxBounds: {x: 8, y: 4.5}
+  enemyTag: Enemy
+  enemyBulletTag: EnemyBullet
+  maxHp: 5
+  damagePerHit: 1
+  enemyKnockbackDistance: 2
+  enemyKnockbackDuration: 0.2
+  invincibleTime: 1.5
+  blinkInterval: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

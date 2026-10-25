@@ -19,8 +19,8 @@ public class Boss_Missile : MonoBehaviour
             dir = player.transform.position - transform.position;
 
 
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;            // 날아가는 각도도 실시간으로 변경
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;                    // 날아가는 각도도 실시간으로 변경
+            transform.rotation = Quaternion.AngleAxis(angle - 90f, Vector3.forward);    // y축을 정면으로 보기
         }
 
         // 이동

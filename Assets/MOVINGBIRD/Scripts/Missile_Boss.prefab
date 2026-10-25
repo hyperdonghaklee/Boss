@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8016877761474528789}
   m_Layer: 0
   m_Name: Missile_Boss
-  m_TagString: Untagged
+  m_TagString: Throw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
